@@ -30,9 +30,9 @@ Route::middleware([
 
 Route::prefix('dataProdi')->group(function (){
     Route::get('/view', [prodiController::class, 'index'])->name('prodi.view');
-    Route::get('/add', [prodiController::class, 'create'])->name('event.add');
-    Route::get('/edit/{id}', [prodiController::class, 'edit'])->name('event.edit');
-    Route::post('/update/{id}', [prodiController::class, 'update'])->name('event.update');
-    Route::get('/delete/{id}', [prodiController::class, 'destroy'])->name('event.delete');
-    Route::post('/store', [prodiController::class, 'store'])->name('event.store');
+    Route::get('/add', [prodiController::class, 'create'])->name('prodi.add');
+    Route::get('/edit/{id}', [prodiController::class, 'edit'])->name('prodi.edit');
+    Route::post('/update/{id}', [prodiController::class, 'update'])->name('prodi.update');
+    Route::get('/delete/{id}', [prodiController::class, 'delete'])->name('prodi.delete');
+    Route::post('/store', [prodiController::class, 'store'])->name('prodi.store');
 });

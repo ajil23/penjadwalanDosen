@@ -8,7 +8,7 @@
                 <h1 class="h3 mb-2 text-gray-800">Data Prodi</h1>
             </div>
             <div class="co text-end mb-2">
-                <a href="#"><button type="button" class="btn btn-primary">Tambah Prodi</button></a>
+                <a href="{{route('prodi.add')}}"><button type="button" class="btn btn-primary">Tambah Prodi</button></a>
             </div>
         </div>
     </div>
@@ -27,16 +27,18 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($allDataProdi as $item =>$row)
                         <tr>
-                            <td>1</td>
-                            <td>323</td>
-                            <td>TRPL</td>
-                            <td>D4</td>
+                            <td>{{$loop->iteration}}</td>
+                            <td>{{$row->kodeProdi}}</td>
+                            <td>{{$row->namaProdi}}</td>
+                            <td>{{$row->jenjang}}</td>
                             <td colspan="2">
-                                <a href="#" class="btn btn-warning"> Edit </a>
-                                <a href="#" class="btn btn-danger">Hapus</a>
+                                <a href="{{route('prodi.edit', $row->id)}}" class="btn btn-warning"> Edit </a>
+                                <a href="{{route('prodi.delete', $row->id)}}" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table> 
             </div>
