@@ -14,7 +14,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{url('/dashboard')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -32,7 +32,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="buttons.html">Data Dosen</a>
-                <a class="collapse-item" href="cards.html">Data Prodi</a>
+                <a class="collapse-item" href="{{route('prodi.view')}}">Data Prodi</a>
                 <a class="collapse-item" href="cards.html">Data Matakuliah</a>
                 <a class="collapse-item" href="cards.html">Data Kelas</a>
             </div>
