@@ -34,7 +34,7 @@
                             <td>{{$row->namaProdi}}</td>
                             <td>{{$row->jenjang}}</td>
                             <td colspan="2">
-                                <a href="{{route('prodi.edit', $row->id)}}" class="btn btn-warning"> Edit </a>
+                                <a href="{{route('prodi.edit', $row->id)}}" class="btn btn-success"> Edit </a>
                                 <a href="{{route('prodi.delete', $row->id)}}" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>

@@ -7,10 +7,6 @@
             <div class="col">
                 <h1 class="h3 mb-2 text-gray-800">Edit Data Prodi</h1>
             </div>
-            <div class="co text-end mb-2">
-                <a href="#"><button type="button" class="btn btn-success">Edit</button></a>
-                <button onclick="history.back()" type="button" class="btn btn-danger">Batal</button>
-            </div>
         </div>
     </div>
 
